@@ -6,12 +6,10 @@
     <title>vans</title>
     <link rel="apple-touch-icon" href="images/common/favicon.ico"><!-- size:114 -->
     <link rel="shortcut icon" href="images/common/favicon.ico"><!-- size:72 -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/common.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
@@ -34,7 +32,7 @@
            <button class="customBtn">
                 <span class="blind-b">나만의 신발 만들기</span>
            </button>
-            <div class="wrap">
+            <div class="pcnav_wrap">
                 <nav class="pcGnb">
                     <ul>
                         <li><a href="">NEW</a>
@@ -189,13 +187,182 @@
                     </ul>
             </div>
         </header>
+        <!-- mobile header -->
+        <header class="header" id="mHeader">
+            <h1 class="logo">
+                <a href="">
+                    <img src="assets/images/common/mlogo.png" alt="반스" srcset="assets/images/common/mlogo@2x.png 2x,
+                    assets/images/common/mlogo@3x.png 3x">
+                </a>
+            </h1>
+            <button class="mnavOpenBtn">
+                <span class="blind-b">메뉴열기</span>
+            </button>
+            <button class="mcustomBtn">
+                 <span class="blind-b">나만의 신발 만들기</span>
+            </button>
+            <div class="mnav_wrap">
+                <ul class="m_util">
+                    <li class="first"><a href="">MY CART</a></li>
+                    <li><a href="">LOG IN</a></li>
+                    <li><a href="">SIGN UP</a></li>
+                </ul>
+                <nav class="m_Gnb">
+                    <ul>
+                        <li><a href="">NEW</a>
+                            <ul class="depth2_wrap">
+                                <li>
+                                    <strong class="depth2_tit">NEW</strong>
+                                    <ul>
+                                        <li><a href="">ALL</a></li>
+                                        <li><a href="">NEW SHOE</a></li>
+                                        <li><a href="">NEW CLOTHES</a></li>
+                                        <li><a href="">NEW ACCS</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                <strong class="depth2_tit">COLLECTION</strong>
+                                <ul class="depth2_wrap">
+                                    <li>
+                                        <a href="">VANS & MoMA</a>
+                                    </li>
+                                    <li>
+                                        <a href="">VANS X FLOUR SHOP</a>
+                                    </li>
+                                    <li>
+                                        <a href="">VANS X QUARTERSNACKS</a>
+                                    </li>
+                                    <li>
+                                        <a href="">PIG SUEDE</a>
+                                    </li>
+                                    <li>
+                                        <a href="">ANDERSON PAAK </a>
+                                    </li>
+                                    <li>
+                                        <a href="">FABIANA DELFINO</a>
+                                    </li>
+                                    <li>
+                                        <a href="">MULE FAMILY</a>
+                                    </li>
+                                    <li>
+                                        <a href="">TIGER PATCHWORK</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li><a href="">SHOE</a>
+                            <ul class="depth2_wrap">
+                                <li>
+                                    <strong class="depth2_tit">ADULT</strong>
+                                    <ul>
+                                        <li><a href="">ALL</a></li>
+                                        <li><a href="">CORE CLASSIC</a></li>
+                                        <li><a href="">CLASSIC</a></li>
+                                        <li><a href="">PRO SKATE</a></li>
+                                        <li><a href="">CLASSIC PLUS</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong class="depth2_tit">KIDS</strong>
+                                <ul>
+                                    <li><a href="">ALL</a></li>
+                                    <li><a href="">TODDLER</a></li>
+                                    <li><a href="">BEST SELLER</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li><a href="">CLOTHES</a>
+                            <ul class="depth2_wrap">
+                                <li>
+                                    <strong class="depth2_tit">CLOTHES</strong>
+                                    <ul>
+                                        <li><a href="">TOP & T-SHIRT</a></li>
+                                        <li><a href="">FLEECE</a></li>
+                                        <li><a href="">OUTER</a></li>
+                                        <li><a href="">BOTTOM</a></li>
+                                        <li><a href="">ONEPIECE</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">ACCS</a>
+                            <ul class="depth2_wrap">
+                                <li>
+                                    <strong class="depth2_tit">ACCS</strong>
+                                    <ul>
+                                        <li><a href="">ALL</a></li>
+                                        <li><a href="">HAT</a></li>
+                                        <li><a href="">BAG</a></li>
+                                        <li><a href="">SOCKS</a></li>
+                                        <li><a href="">ETC</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">CUSTOM</a>
+                            <ul class="depth2_wrap">
+                                <li>
+                                    <strong class="depth2_tit">CUSTOMS</strong>
+                                    <a href="">CUSTOM</a>
+                                </li>
+                                <li>
+                                    <strong class="depth2_tit">FEATURED</strong>
+                                    <ul>
+                                        <li>
+                                            <a href="">CUSTOMADE BY MAY KIM</a>
+                                        </li>
+                                        <li>
+                                            <a href="">SIMSON FAMILY PATTERN</a>
+                                        </li>
+                                        <li>
+                                            <a href="">2020 NEW PATTERN</a>
+                                        </li>
+                                        <li>
+                                            <a href="">DOG & CAT PATTERN</a>
+                                        </li>
+                                        <li>
+                                            <a href="">ANIMAL PRINT PATTERN</a>
+                                        </li>
+                                        <li>
+                                            <a href="">VANS X FERGES PURCELL</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">SKATE & SURF</a>
+                            <ul class="depth2_wrap">
+                                <li>
+                                    <a href="" class="depth2_tit">SKATE</a>
+                                </li>
+                                <li>
+                                    <a href="" class="depth2_tit">SURF</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mGnb_btm">
+                    <img class="yellow" width="33" src="assets/images/common/yellowsquare.svg" alt="노란색 도형">
+                    <img class="red" width="498" src="assets/images/common/redDia.svg" alt="빨간색 다이아몬드">
+                    <img class="green" width="77" src="assets/images/common/greenstar.svg" alt="초록색 별">
+                    <img class="green" width="130" src="assets/images/common/blue.svg" alt="파란색 도형">
+                </div>
+                <button class="btn_close last" type="button"><img src="assets/images/common/close.png" alt="검색창 닫기"></button>
+            </div>
+            
+        </header>
         <section id="cnt1" class="section">
             <h2>BEYOND THE WALL<br>OFF THE WALL</h2>
-            <div></div>
             <div id="movie">
                 <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/f4ZzHtww6Tc?autoplay=1&controls=0&loop=1&start=9&mute=1" allowfullscreen title="반스 글로벌 스케이트 팀의 스케이트 필름 비디오">
+                </iframe>
             </div>
-            <div id="plasticBag"></div>
+            <div id="plasticBag">
+                <img src="" alt="">
+            </div>
         </section>
         <section id="cnt2" class="section">
             <div class="bigSquare">
@@ -238,7 +405,7 @@
                     </button>
                 </h3>
                 <div id="aPanel1" class="accopanel" role="region" aria-labelledby="aHeader1">
-                    <ul  class="linePanel">
+                    <ul class="linePanel">
                         <li>
                             <a href="">SHOE</a>
                         </li>
@@ -293,9 +460,36 @@
                     </ul>
                 </div>
             </div>
+            <div class="greenEffect">
+                <img src="assets/images/common/greenEffect.png" alt="this is off the wall">
+            </div>
         </section>
         <section id="cnt4" class="section">
-            <div id="sellTab">
+            <h2 class="blind-b">콜렉션</h2>
+            <div>
+                <ul class="bxslider">
+                    <li>
+                        <img src="assets/images/common/silder1.png" title="반스 콜렉션">
+                        <strong>COLLECTION OF VANS</strong>
+                    </li>
+                    <li>
+                        <img src="assets/images/common/silder3.png" title="VAN와 MoMA 콜라보레이션 콜렉션">
+                        <strong>MoMA X VANS COLLECTION</strong>
+                    </li>
+                    <li>
+                        <img src="assets/images/common/paakslider2.png" title="ANDERSON PAAK 콜렉션">
+                        <strong>ANDERSON PAAK COLLECTION</strong>
+                    </li>
+                    <li>
+                        <img src="assets/images/common/slider4.png" title="TIGER PATCHWORK 콜렉션">
+                        <strong>TIGER PATCHWORK COLLECTION</strong>
+                    </li>
+                  </ul>
+            </div>
+    </section>
+    <section id="cnt5" class="section">
+        <h2 class="blind-b">베스트셀러 상품과 새 상품</h2>
+        <div id="sellTab">
             <ul role="tablist" class="tablist" aria-label="반스대표상품">
                 <li role="tab" class="tab first" id="tab1" aria-controls="tabpanel1">BEST SELLER</li>
                 <li role="tab" class="tab" id="tab2" aria-controls="tabpanel2">NEW ARRIVAL</li>
@@ -304,67 +498,55 @@
                 <ul class="bestSeller">
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg blue">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/b1.png" onmouseover="this.src='assets/images/common/b2.png';" onmouseout="this.src='assets/images/common/b1.png';" alt="CORE CLASSIC OLD SKOOL신발" title="CORE CLASSIC OLD SKOOL" /></a>
                             <div class="txtWrap">
                                 <strong>CORE CLASSIC OLD SKOOL</strong>
-                                <strong>69,000</strong>
+                                <p>69,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg green">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/b3.png" onmouseover="this.src='assets/images/common/b4.png';" onmouseout="this.src='assets/images/common/b3.png';" alt="CORE CLASSIC ERA 신발" title="CORE CLASSIC ERA" /></a>
                             <div class="txtWrap">
                                 <strong>CORE CLASSIC ERA</strong>
-                                <strong>59,000</strong>
+                                <p>59,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg blue">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/b5.png" onmouseover="this.src='assets/images/common/b6.png';" onmouseout="this.src='assets/images/common/b5.png';" alt="CORE CLASSIC CHECKER BOARD SLIP-ON 신발" title="CORE CLASSIC CHECKER BOARD SLIP-ON" /></a>
                             <div class="txtWrap">
                                 <strong>CORE CLASSIC<br>CHECKER BOARD SLIP-ON</strong>
-                                <strong>59,000</strong>
+                                <p>59,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg green">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/b7.png" onmouseover="this.src='assets/images/common/b8.png';" onmouseout="this.src='assets/images/common/b7.png';" alt="CORE CLASSIC SK8-HI 신발" title="CORE CLASSIC SK8-HI" /></a>
                             <div class="txtWrap">
                                 <strong>CORE CLASSIC SK8-HI</strong>
-                                <strong>79,000</strong>
+                                <p>79,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg blue">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/b9.png" onmouseover="this.src='assets/images/common/b10.png';" onmouseout="this.src='assets/images/common/b9.png';" alt="CORE CLASSIC SOLIDSLIP-ON 신발" title="CORE CLASSIC SOLIDSLIP-ON" /></a>
                             <div class="txtWrap">
                                 <strong>CORE CLASSIC SOLID<br>SLIP-ON</strong>
-                                <strong>55,000</strong>
+                                <p>55,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg green">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/b11.png" onmouseover="this.src='assets/images/common/b12.png';" onmouseout="this.src='assets/images/common/b11.png';" alt="KID OLD SKOOL V 신발" title="KID OLD SKOOL V" /></a>
                             <div class="txtWrap">
                                 <strong>KID OLD SKOOL V</strong>
-                                <strong>55,000</strong>
+                                <p>55,000</p>
                             </div>
                         </div>
                     </li>
@@ -374,67 +556,55 @@
                 <ul class="newArrival">
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg blue">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/n1.png" onmouseover="this.src='assets/images/common/n2.png';" onmouseout="this.src='assets/images/common/n1.png';" alt="VANS X MoMA CLASSIC SLIP-ON 신발" title="VANS X MoMA CLASSIC SLIP-ON" /></a>
                             <div class="txtWrap">
                                 <strong>VANS X MoMA CLASSIC SLIP-ON</strong>
-                                <strong>89,000</strong>
+                                <p>89,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg green">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/n3.png" onmouseover="this.src='assets/images/common/n4.png';" onmouseout="this.src='assets/images/common/n3.png';" alt="VANS X MoMA COMFYCUSH OLD SKOOL 신발" title="VANS X MoMA COMFYCUSH OLD SKOOL" /></a>
                             <div class="txtWrap">
                                 <strong>VANS X MoMA COMFYCUSH OLD SKOOL</strong>
-                                <strong>109,000</strong>
+                                <p>109,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg blue">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/n5.png" onmouseover="this.src='assets/images/common/n6.png';" onmouseout="this.src='assets/images/common/n5.png';" alt="ANDERSON.PAAK OLD SKOOL DX 신발" title="ANDERSON.PAAK OLD SKOOL DX" /></a>
                             <div class="txtWrap">
-                                <strong>ANDERSON. PAAK OLD SKOOL DX</strong>
-                                <strong>59,000</strong>
+                                <strong>ANDERSON.PAAK OLD SKOOL DX</strong>
+                                <p>59,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg green">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/n7.png" onmouseover="this.src='assets/images/common/n8.png';" onmouseout="this.src='assets/images/common/n7.png';" alt="TIGER PATCHWORK CREWNECK SHIRT" title="TIGER PATCHWORK CREWNECK SHIRT" /></a>
                             <div class="txtWrap">
                                 <strong>TIGER PATCHWORK<br>CREWNECK SHIRT</strong>
-                                <strong>69,000</strong>
+                                <p>69,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg blue">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/n9.png" onmouseover="this.src='assets/images/common/n10.png';" onmouseout="this.src='assets/images/common/n9.png';" alt="RETRO SPORT STYLE 36 신발" title="RETRO SPORT STYLE 36" /></a>
                             <div class="txtWrap">
                                 <strong>RETRO SPORT STYLE 36</strong>
-                                <strong>75,000</strong>
+                                <p>75,000</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="squareSt">
-                            <div class="squareBg green">
-                                <img src="" alt="">
-                            </div>
+                            <a href="/"><img src="assets/images/common/n11.png" onmouseover="this.src='assets/images/common/n12.png';" onmouseout="this.src='assets/images/common/n11.png';" alt="TIGER PATCHWORK ERA 신발" title="TIGER PATCHWORK ERA" /></a>
                             <div class="txtWrap">
                                 <strong>TIGER PATCHWORK ERA</strong>
-                                <strong>79,000</strong>
+                                <p>79,000</p>
                             </div>
                         </div>
                     </li>
@@ -443,13 +613,107 @@
 
         </div>
     </section>
-        <section id="cnt5" class="section">
+    <section id="cnt6" class="section">
+        <h2 class="blind-b">ANDERSON PAAK 룩북</h2>
+        <div class="lookbook">
+            <h3>ANDERSON PAAK<br>
+                COLLECTION</h3>
+            <p>Vans and Anderson .Paak Come Together to Celebrate Family and Community in Second Delivery of Footwear, Apparel and Accessories this December</p>
+            <img src="assets/images/common/101.png" alt="검정배경">
+            <img src="assets/images/common/hat-and-shoe.png" alt="ANDERSON PAAK의 모자와 신발 콜렉션이 탁자위에 있다">
+            <img src="assets/images/common/shoe.png" alt="ANDERSON PAAK의 콜렉션 신발이 세개가 나란히 놓여져 있다">
+            <img src="assets/images/common/people.png" alt="ANDERSON PAAK과 두 아들들이 콜렉션 신발을 신은 채로 시간을 보내고 있다">
+            <img src="assets/images/common/sit.png" alt="ANDERSON PAAK이 콜렉션 제품을 착용한 채로 소파에 앉아있다">
+        </div>
+        <img src="assets/images/common/sticker.png" alt="노랑색 웃는모양 스티커">
+        <img src="assets/images/common/sticker-2.png" alt="핑크색 웃는모양 스티커">
+        <div class="texture_plastic"><img src="" alt=""></div>
+    </section>
+    <footer id="footer">
+        <div class="footerContent">
+            <div class="innerContent">
+                <div class="grid">
+                    <dl>
+                        <dt class="footerSt">ABOUT</dt>
+                        <dd><a href="">반스에 대하여</a></dd>
+                        <dd><a href="">고객센터</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="footerSt">SHOPPING</dt>
+                        <dd><a href="">회원가입</a></dd>
+                        <dd><a href="">주문 / 배송 조회</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="footerSt">LEGAL</dt>
+                        <dd><a href="">이용약관</a></dd>
+                        <dd><a href="" class="big">개인정보처리방침</a></dd>
+                        <dd><a href="">청소년보호정책</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>SUBSCRIBE</dt>
+                        <div class="newsletter-conts" data-module-newsletter="{successMsg:정상적으로 등록 되었습니다.,loggedIn:null}">
+							<form method="POST" action="/newsLetter/add">
+								<div class="newsletter-field">
+									<span class="input-textfield" data-component-textfield="{required:true, errMsg:잘못된 이메일 형식입니다.,type:email}">
+										<label for="targetValue">Enter Email Address</label>
+										<input type="text" id="targetValue" name="targetValue">
+										<span class="error-message">잘못된 이메일 형식입니다.</span>
+									</span>
+									<button href="#" class="btn_join btn-link"><i class="icon-arrow_right"></i></button>
+								</div>
+								<div class="input-form-group">
+									<span class="input-checkbox checked" data-component-checkbox="{required:true,errMsg:개인정보처리방침을 체크해주세요}">
+										<input type="checkbox" id="newsletter-chk" name="newsletter-chk">
+										<label for="newsletter-chk">
+											<i class="brz-icon-checkbox">rediobox</i>
+											<span class="label">본인은 이용약관, 개인정보수집동의에 관한 <br>내용을 읽고 이해했습니다.</span>
+										</label>
+										<a href="javascript:;" data-uk-modal="{target:'#privacy-personal'}">(개인정보 처리방침 확인)</a>
+									</span>
+								</div>
+							<input type="hidden" name="csrfToken" value="QJM0-IUET-P9T6-FL3P-BMXW-3ANX-NCOX-LSRR"></form>
+						</div>
+                    </dl>
+                    <dl>
+                        <dt>FOLLOW US</dt>
+                        <dd>
+                            <div class="footer_sns">
+                                <a href="https://www.instagram.com/vans_korea/" target="_blank" class="sns instagram" title="반스 인스타그램 바로가기"><img src="assets/images/common/instagram.png" alt="instagram 바로가기"></a>
+                                <a href="https://www.facebook.com/VANS/" target="_blank" class="sns facebook" title="반스 페이스북 바로가기"><img src="assets/images/common/facebook.png" alt="facebook 바로가기"></a>
+                                <a href="https://www.youtube.com/user/VansShoes66" target="_blank" class="sns youtube" title="반스 유투브 바로가기"><img src="assets/images/common/youtube.png" alt="youtube 바로가기"></a>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="grid">
+                    <address>
+                        <a href="https://gguggu9898.github.io/vans_project/"><span class="blind-b">반스</span></a>
+                        <span>회사명: 유한회사 브이에프 코리아</span> / 
+                        <span>대표이사: TZE CHOI THEODORE PANG</span> / <br class="mobile-br">
+                        <span>사업자 등록번호: 220-88-43561</span> <br> 
+                        <span>통신판매업 신고번호: 2013-서울강남-02918호</span> / 
+                        <a href="https://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2013322016230202918&pageUnit=10&searchCnd=wrkr_no&searchKrwd=2208843561&pageIndex=1" target="blank_" class="comfirm">사업자정보확인</a> / <br class="mobile-br"> 
+                        <span>개인정보 책임자: 장성철</span> <br>
+                        <span>주소: 서울특별시 강남구 테헤란로 317 동훈타워 18층</span> / <br class="mobile-br"> 
+                        <span>E-mail 문의: daeun_jeong@vfc.com</span>
+                        <span>고객센터(평일 09:00 ~ 18:00) 1522-1882</span> <br>
+                        <span>&copy;유한회사 브이에프 코리아. All Rights Reserved.</span> <br>
+                        <span>California Transparency in Supply Chain Act of 2010</span>
+                    </address>
+                    <div>
+                        <span>
 
-        </section>
-
-        <footer id="footer">
-
-        </footer>
+                            <span class="t">소비자피해 보증보험</span>
+                            고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한<br>
+                            구매안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.<br>
+                            보증대상: 미배송, 반품/환불거부, 쇼핑몰 부도<br>
+                            <a href="https://mall.sgic.co.kr/csh/iutf/sh/shop/CSHINFO004VM0.mvc?tm=3">보증보험 가입사실 확인하기</a><br>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 </html>
