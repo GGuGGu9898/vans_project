@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* 
+기본pc => 태블릿 => 모바일
+*/
+#wrap {
+  min-width: 20rem; }
+
+/* 320px => ? rem */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102px;
+  z-index: 900; }
+  .header .topHeader {
+    background: #ffffff; }
+    .header .topHeader .logo {
+      padding-top: 25px; }
+
+#pcHeader .topHeader .logo a {
+  width: 114px;
+  height: 61px; }
+
+#mHeader {
+  display: none; }
+
+/*# sourceMappingURL=layout.css.map */
