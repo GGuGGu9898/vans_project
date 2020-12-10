@@ -55,7 +55,8 @@ input, button {
 
 img {
   border: none;
-  vertical-align: top; }
+  vertical-align: top;
+  max-width: 100%; }
 
 address {
   font-style: normal; }
