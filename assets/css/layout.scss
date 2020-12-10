@@ -7,22 +7,61 @@
 #wrap{min-width: 20rem;} /* 320px => ? rem */
 //pc, 모바일 공통
 .header{
-    position: fixed;top: 0;left: 0;width: 100%;height: 102px;z-index: 900;
-    .topHeader{
-        background: $white;
-        .logo{
-            padding-top: 25px;
-        }
+    position: fixed;top: 0;left: 0;width: 100%;background: $white;z-index: 900;
+    
+    .logo{
+        text-align: center;
     }
+    .navOpenBtn, .customBtn{position: absolute;top: 44px;font-weight: 500;}
+    .navOpenBtn{left: 0;}
+    .customBtn{right: 0;}
 }
 
 //pc 
 #pcHeader{
-    .topHeader{
-        .logo{
-            a{
-                width: 114px;height: 61px;
+    
+    > .max1420{height: 102px;}
+    .logo{
+        padding-top: 20px;
+        a{
+            width: 114px;height: 61px;
+        }
+    }
+    .navOpenBtn, .customBtn{font-size: 20px;}
+}
+.pcnav_wrap{position: fixed;top: 102px;left: 0;width: 100%;background-color: $black; 
+    .pcGnb{color:$white;
+        > ul{
+            > li{
+                float: left;
+                 > a{margin-right: 50px;line-height: 76px;}
             }
+        }
+        .dep2_wrap{position: absolute;top: 76px;left: 0;width: 100%;background: $black;border-top: 1px solid #8c8c8c;}
+        .dep2{
+            max-width: 1420px;width: 100%;margin: 0 auto;
+            &::after{content: "";display: block;clear: both;}
+            > *{
+                @include border-box;
+                float: left;width: 50%;height: 353px;padding: 41px 31px 30px 32px;
+            }
+            > :first-child{border-right: 1px solid #8c8c8c;padding-left: 0;background: url("../images/common/-e-LEFT.png") no-repeat right 31px bottom 30px}
+            strong{font-size: 18px;display:block;padding-bottom: 26px;}
+            >:last-child{background: url("../images/common/-e-right.png") no-repeat right 31px top 41px;}
+        }
+        > ul > li:nth-child(6) .dep2_tit{display: block;padding-bottom: 35px;}
+        .dep3{
+
+            >li{margin-bottom: 10px;
+            }
+            a{font-size: 14px;font-weight: 300;}
+        }
+    }
+    .util_wrap{
+        .util{
+            bottom: 35px;color: $white;font-size: 12px;float: right;right: 0;
+            li{float: left;margin-right: 30px;}
+            li:last-child{margin-right: 0;}
         }
     }
 }

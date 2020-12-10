@@ -1,0 +1,132 @@
+/* cnt1 */
+#cnt1 {
+  margin-top: 102px; }
+  #cnt1 .redSource {
+    height: 327px;
+    background: url("../images/common/redgraffiti.png") no-repeat top left;
+    top: -30px;
+    left: -83px;
+    width: 100%; }
+  #cnt1 h2 {
+    top: 50px;
+    font-size: 138px;
+    line-height: 133.5px;
+    color: #ffffff;
+    letter-spacing: -2.08px;
+    z-index: 220; }
+  #cnt1 #movie {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: -100; }
+    #cnt1 #movie iframe {
+      width: 100%;
+      height: 798.5px; }
+    #cnt1 #movie::before {
+      content: "";
+      position: absolute;
+      bottom: 100px;
+      left: 80px;
+      background: url("../images/common/.png") no-repeat; }
+    #cnt1 #movie::after {
+      content: "";
+      position: absolute;
+      bottom: 100px;
+      right: 80px;
+      background: url("../images/common/greengrafftti.png") no-repeat;
+      width: 138px;
+      height: 280px;
+      z-index: 220; }
+  #cnt1 #plasticBag {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: 200;
+    background: url("../images/common/plastic.png") no-repeat;
+    height: 800px;
+    opacity: .9; }
+
+/* cnt2 */
+#cnt2 {
+  padding-top: 902px; }
+  #cnt2 .bigSquare {
+    background: url("../images/common/square_bg.png") no-repeat;
+    height: 1065px;
+    width: 1420px; }
+  #cnt2 h2 {
+    top: 45px;
+    left: 395.5px;
+    background: url("../images/common/titleCircle.png") no-repeat;
+    width: 638px;
+    height: 198px;
+    font-size: 30px;
+    color: #000000;
+    line-height: 198px;
+    text-align: center; }
+    #cnt2 h2::after {
+      content: ""; }
+  #cnt2 .era {
+    top: 606px;
+    left: 582px; }
+    #cnt2 .era::after {
+      content: "";
+      position: absolute;
+      top: 130px;
+      right: 753px;
+      background: url("../images/common/content2.png");
+      width: 56px;
+      height: 41px; }
+  #cnt2 .hi {
+    top: 326px;
+    left: 309px; }
+    #cnt2 .hi::after {
+      content: "";
+      position: absolute;
+      bottom: 250px;
+      right: 331px;
+      background: url("../images/common/mask.png") no-repeat;
+      width: 118px;
+      height: 152px; }
+  #cnt2 .slipOn {
+    bottom: 97px;
+    left: 309px; }
+    #cnt2 .slipOn::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 600px;
+      background: url("../images/common/board.png") no-repeat;
+      width: 164px;
+      height: 80px; }
+  #cnt2 .authentic {
+    top: 92px;
+    right: 33px; }
+    #cnt2 .authentic::after {
+      content: "";
+      position: absolute;
+      top: 497px;
+      right: 20px;
+      background: url("../images/common/shark.png") no-repeat;
+      width: 187px;
+      height: 152px; }
+  #cnt2 .oldSkool {
+    top: 352px;
+    right: 307px; }
+    #cnt2 .oldSkool::after {
+      content: "";
+      position: absolute;
+      bottom: -44px;
+      left: 288px;
+      background: url("../images/common/content2-2.png") no-repeat;
+      width: 51px;
+      height: 38px; }
+
+#cnt3, #cnt4, #cnt5, #cnt6, footer {
+  display: none; }
+
+/* cnt3 */
+/* cnt4 */
+/* cnt5 */
+/* cnt6 */
+
+/*# sourceMappingURL=main.css.map */

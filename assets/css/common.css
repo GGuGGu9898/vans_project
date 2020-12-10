@@ -1,5 +1,11 @@
 @font-face {
   font-family: Helvetica;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/HelveticaNeueLTStd-Md.eot");
+  src: url("../fonts/HelveticaNeueLTStd-Md.eot#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueLTStd-Md.woff2") format("woff2"), url("../fonts/HelveticaNeueLTStd-Md.woff") format("woff"), url("../fonts/HelveticaNeueLTStd-Md.otf") format("opentype"); }
+@font-face {
+  font-family: Helvetica;
   font-weight: 500;
   font-style: normal;
   src: url("../fonts/HelveticaNeueLTStd-Blk.eot");
@@ -42,11 +48,10 @@ video {
 iframe {
   border: none; }
 
-input {
+input, button {
   font-family: inherit;
   font-size: inherit;
-  color: inherit;
-  line-height: inherit; }
+  color: inherit; }
 
 img {
   border: none;
@@ -88,7 +93,8 @@ header, nav, footer, section {
 .max1420 {
   max-width: 1420px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid red; }
 
 body {
   font-family: Helvetica, NtSansKR;

@@ -4,6 +4,16 @@
 
 @font-face{
 font-family: Helvetica;
+font-weight: 300;
+font-style: normal;
+src: url("../fonts/HelveticaNeueLTStd-Md.eot");
+src: url("../fonts/HelveticaNeueLTStd-Md.eot#iefix") format("embedded-opentype"),
+url("../fonts/HelveticaNeueLTStd-Md.woff2") format("woff2"),
+url("../fonts/HelveticaNeueLTStd-Md.woff") format("woff"),
+url("../fonts/HelveticaNeueLTStd-Md.otf") format("opentype");
+}
+@font-face{
+font-family: Helvetica;
 font-weight: 500;
 font-style: normal;
 src: url("../fonts/HelveticaNeueLTStd-Blk.eot");
@@ -41,7 +51,7 @@ a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit;}
 button{background: none;border: none;cursor: pointer;}
 video{max-width: 100%;}
 iframe{border: none;}
-input{font-family: inherit;font-size: inherit;color: inherit;line-height: inherit;}
+input, button{font-family: inherit;font-size: inherit;color: inherit;}
 img{border: none; vertical-align: top;}
 address{font-style: normal;}
 header, nav, footer, section {display: block;}
@@ -53,7 +63,7 @@ header, nav, footer, section {display: block;}
 .p_a{position: absolute;}
 .clearfix::after{content:""; display: block;clear: both;}
 .blind-b{overflow: hidden;border: none;position: absolute;width: 1px;height: 1px;clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
-.max1420{max-width: 1420px;width: 100%;margin: 0 auto;}
+.max1420{max-width: 1420px;width: 100%;margin: 0 auto;border: 1px solid red;}
 
 body{
     font-family: Helvetica, NtSansKR;
