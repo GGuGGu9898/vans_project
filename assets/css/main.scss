@@ -7,7 +7,7 @@
     .redSource{height: 327px;background: url("../images/main/redgraffiti.png") no-repeat top left;top: -30px;left: -83px;width: 100%;
     }
     h2{
-       top: 50px; font-size: 138px;line-height: 133.5px;color: $white;letter-spacing: -2.08px;z-index: 220;
+       top: 50px; font-size: 138px;line-height: 133.5px;color: $white;letter-spacing: -2.08px;z-index: 500;
        
     }
     #movie{
@@ -26,21 +26,53 @@
 /* cnt2 */
 #cnt2{
     padding-top: 260px;
-   .bigSquare{background: url("../images/main/square_bg.png") no-repeat;height: 1065px;width: 1420px;} 
+   .bigSquare{background: url("../images/main/square_bg.png") no-repeat;height: 1065px;width: 100%;max-width: 1420px;} 
         h2{top: 45px;left: 395.5px;background: url("../images/main/titleCircle.png") no-repeat; width: 638px;height: 198px;font-size: 30px; color: $black;line-height: 198px;text-align: center; 
         }
-        .era{top: 606px;left: 582px;
-        &::after{content:"";position: absolute;top: 130px;right: 753px;background: url("../images/main/content2.png");width: 56px;height: 41px;}
+        .era{
+            a{
+                display: inline-block;
+                span{
+                    @include transform(translate(-50%, -50%));
+                    @include border-radius(50%);
+                    @include transition(opacity 0.5s);
+                    position: absolute;top: 50%;left: 50%;width: 7.86vw;height: 7.86vw;background-color: #002aff;color: $white;font-size: 1.04vw;text-align: center;line-height: 7.86vw;
+                    opacity: 0;}
+                    &:hover span, &:focus span{opacity: 1;}
+            }
+            top: 50%;left: 40%;
+            &::after{content:"";position: absolute;bottom: 10%;right: 268%;background: url("../images/main/content2.png");width: 56px;height: 41px;}
         }
         .hi{
-            top: 326px;left: 309px;   
+            a{
+                display: inline-block;
+                span{
+                    @include transform(translate(-50%, -50%));
+                    @include border-radius(50%);
+                    @include transition(opacity 0.5s);
+                    position: absolute;top: 50%;left: 50%;width: 7.86vw;height: 7.86vw;background-color: #002aff;color: $white;font-size: 1.04vw;text-align: center;line-height: 7.86vw;
+                    opacity: 0;}
+                    &:hover span, &:focus span{opacity: 1;}
+            }
+            top: 25%;left: 20%;   
             &::after{
-                content: "";position: absolute;bottom: 250px;right: 331px;background: url("../images/main/mask.png") no-repeat; width: 118px;height: 152px;
+                content: "";position: absolute;top: -78%;left: -67%;background: url("../images/main/mask.png") no-repeat; width: 118px;height: 152px;
             }
             a{height: 129px;}
             }
-        .slipOn{bottom: 97px;left: 309px;
-            &::after{content: "";position: absolute;bottom: 0;left: 600px;background: url("../images/main/board.png") no-repeat; width: 164px;height: 80px;}}
+        .slipOn{
+            a{
+                display: inline-block;
+                span{
+                    @include transform(translate(-50%, -50%));
+                    @include border-radius(50%);
+                    @include transition(opacity 0.5s);
+                    position: absolute;top: 50%;left: 50%;width: 7.86vw;height: 7.86vw;background-color: #002aff;color: $white;font-size: 1.04vw;text-align: center;line-height: 7.86vw;
+                    opacity: 0;}
+                    &:hover span, &:focus span{opacity: 1;}
+            }
+            bottom: 0;left: 20%;
+            &::after{content: "";position: absolute;bottom: 40%;left: 221%;background: url("../images/main/board.png") no-repeat; width: 164px;height: 80px;}}
         .authentic{
             a{
                 display: inline-block;
@@ -53,20 +85,31 @@
                     &:hover span, &:focus span{opacity: 1;}
             }
             top: 0;right: 0;
-            &::after{ content: "";position: absolute;top:497px;right: 20px;background: url("../images/main/shark.png") no-repeat; width: 187px;height: 152px;
+            &::after{ content: "";position: absolute;top: 220%;right: 20%;background: url("../images/main/shark.png") no-repeat; width: 187px;height: 152px;
            
             }
     }
-        .oldSkool{top: 352px;right: 307px;
-            &::after{ content: "";position: absolute;bottom:-44px;left: 288px;background: url("../images/main/content2-2.png") no-repeat; width: 51px;height: 38px;}}
+        .oldSkool{
+            a{
+                display: inline-block;
+                span{
+                    @include transform(translate(-50%, -50%));
+                    @include border-radius(50%);
+                    @include transition(opacity 0.5s);
+                    position: absolute;top: 50%;left: 50%;width: 7.86vw;height: 7.86vw;background-color: #002aff;color: $white;font-size: 1.04vw;text-align: center;line-height: 7.86vw;
+                    opacity: 0;}
+                    &:hover span, &:focus span{opacity: 1;}
+            }
+            top: 25%;right: 20%;
+            &::after{ content: "";position: absolute;bottom: 10%;right: -25%;background: url("../images/main/content2-2.png") no-repeat; width: 51px;height: 38px;}}
+            #checkerPlastic{background: url("../images/main/plasticbag.png") no-repeat; width: 1420px;height: 1065px;position: absolute;top: 0;opacity: .5;}
+            .shoeChoose{display: flex;justify-content: center;align-items: center;z-index: 100;width: 20%;height: 25%;
+            .shoeChoose a:hover, .shoeChoose a:focus{
+            @include border-radius(50%);
+            background-color: #002aff; color:$white;
+            width: 151px;height: 151px;text-align: center;line-height: 151px;font-size: 20px;}
+    }
         }
-        #checkerPlastic{background: url("../images/main/plasticbag.png") no-repeat; width: 1420px;height: 1065px;position: absolute;top: 0;opacity: .5;}
-        .shoeChoose{display: flex;justify-content: center;align-items: center;z-index: 100;width: 20%;height: 25%;background: yellow;
-        .shoeChoose a:hover, .shoeChoose a:focus{
-        @include border-radius(50%);
-        background-color: #002aff; color:$white;
-        width: 151px;height: 151px;text-align: center;line-height: 151px;font-size: 20px;}
-}
 
 /* cnt3 */
 #cnt3{padding-top: 133px;position: relative;
@@ -122,8 +165,8 @@
     .tabpanel{
         ul{padding-top: 3.22vw;}
         .squareSt{
-            border: 0.20vw solid $black;width: 23.43vw;margin-bottom: 1.87vw;
-            img{z-index: -1;}
+            border: 0.20vw solid $black;width: 23.4vw;margin-bottom: 1.87vw;
+            img{z-index: -1;width: 100%;height: auto;}
             .txtWrap{height: 8.90vw;background-color: $white;position: relative;margin-left: 1.56vw;
                 strong{font-size: 1.3vw;margin-top: 1.4vw;line-height: 1.56vw;display: inline-block;
                 }
@@ -152,11 +195,40 @@
         .pic:nth-child(2),.pic:nth-child(5){
             float: right;
         }
-        .stickers{position: absolute;
-
-        &:first-child{top: 17.55vw;left: 29.06vw;width: 6.30vw;}
-        &:last-child{top: 24.42vw;left: 61.01vw;width: 10.62vw;height: 10.57vw;}
+        .texture_plastic{
+        @include bgsize(cover);
+        position: absolute;top: 0;width: 100%;height: 100%;z-index: 200;background: url("../images/main/plastic.png") no-repeat ; opacity: .9;
+        }
+    }
+    .stickers{position: absolute;z-index: 3;}
+    .sticker{position: relative;
+        .yellowS{top: 17.55vw;left: 29.06vw;width: 6.30vw;}
+        .pinkS{top: 24.42vw;left: 61.01vw;width: 10.62vw;height: 10.57vw; }
+        } 
+    
+}
+footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 60px 10px;font-size: 12px;color: #92929D;background: #1c1c1c;margin-top: 10vw;
+    .footerContent{max-width: 1420px;margin: 0 auto 0 auto;line-height: 18px;
+        .innerContent{color: #92929D;
+            /* 미디어쿼리로 어떤기계던 100% */
+        &::after{content:"";display: block;margin-top: 20px;}
+        .grid{display: flex;
+        > *{padding-left: 20px;}
+        .footerSt{width: 16%;}
+        dl{
+            dt{padding-bottom: 5px;font-weight: 500;color: #ffffffe3;font-size: 15px;}
+            dd{margin-top: 8px;}
+        }
+            .newsletter-field{margin-bottom: 10px;
+            .input-textfield {display: inline-block;position: relative;}
+            }
+        
+            }
+            
+            .company{position: relative;
+                padding-left: 160px;width: 40%;
+            }
+            .insurance{width: 60%;}
         }
     }
 }
-footer{display: none;}

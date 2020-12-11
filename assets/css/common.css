@@ -94,8 +94,7 @@ header, nav, footer, section {
 .max1420 {
   max-width: 1420px;
   width: 100%;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 0 auto; }
 
 body {
   font-family: Helvetica, NtSansKR;
