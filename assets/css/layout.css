@@ -12,14 +12,9 @@
   left: 0;
   width: 100%;
   background: #ffffff;
-  z-index: 900;
-  height: 102px; }
-  .header div {
-    max-width: 1420px;
-    width: 100%;
-    margin: 0 auto; }
-    .header div .logo {
-      text-align: center; }
+  z-index: 900; }
+  .header .logo {
+    text-align: center; }
   .header .navOpenBtn, .header .customBtn {
     position: absolute;
     top: 44px;
@@ -29,7 +24,7 @@
   .header .customBtn {
     right: 0; }
 
-#pcHeader > .p_r {
+#pcHeader > .max1420 {
   height: 102px; }
 #pcHeader .logo {
   padding-top: 20px; }
@@ -171,77 +166,5 @@ footer {
           left: 20px; }
       footer .footerContent .innerContent .insurance {
         width: 60%; }
-
-@media screen and (max-width: 1440px) {
-  .header div {
-    max-width: 1200px; }
-
-  .pcnav_wrap {
-    position: fixed;
-    top: 102px;
-    left: 0;
-    width: 100%;
-    background-color: #000000; }
-    .pcnav_wrap .pcGnb {
-      color: #ffffff; }
-      .pcnav_wrap .pcGnb > ul {
-        max-width: 1200px; }
-        .pcnav_wrap .pcGnb > ul > li {
-          float: left; }
-          .pcnav_wrap .pcGnb > ul > li > a {
-            margin-right: 50px;
-            line-height: 76px; }
-      .pcnav_wrap .pcGnb .dep2_wrap {
-        position: absolute;
-        top: 76px;
-        left: 0;
-        width: 100%;
-        background: #000000;
-        border-top: 1px solid #8c8c8c; }
-      .pcnav_wrap .pcGnb .dep2 {
-        max-width: 1420px;
-        width: 100%;
-        margin: 0 auto; }
-        .pcnav_wrap .pcGnb .dep2::after {
-          content: "";
-          display: block;
-          clear: both; }
-        .pcnav_wrap .pcGnb .dep2 > * {
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          float: left;
-          width: 50%;
-          height: 353px;
-          padding: 41px 31px 30px 32px; }
-        .pcnav_wrap .pcGnb .dep2 > :first-child {
-          border-right: 1px solid #8c8c8c;
-          padding-left: 0;
-          background: url("../images/common/-e-LEFT.png") no-repeat right 31px bottom 30px; }
-        .pcnav_wrap .pcGnb .dep2 strong {
-          font-size: 18px;
-          display: block;
-          padding-bottom: 26px; }
-        .pcnav_wrap .pcGnb .dep2 > :last-child {
-          background: url("../images/common/-e-right.png") no-repeat right 31px top 41px; }
-      .pcnav_wrap .pcGnb > ul > li:nth-child(6) .dep2_tit {
-        display: block;
-        padding-bottom: 35px; }
-      .pcnav_wrap .pcGnb .dep3 > li {
-        margin-bottom: 10px; }
-      .pcnav_wrap .pcGnb .dep3 a {
-        font-size: 14px;
-        font-weight: 300; }
-    .pcnav_wrap .util_wrap .util {
-      bottom: 35px;
-      color: #ffffff;
-      font-size: 12px;
-      float: right;
-      right: 0; }
-      .pcnav_wrap .util_wrap .util li {
-        float: left;
-        margin-right: 30px; }
-      .pcnav_wrap .util_wrap .util li:last-child {
-        margin-right: 0; } }
 
 /*# sourceMappingURL=layout.css.map */
