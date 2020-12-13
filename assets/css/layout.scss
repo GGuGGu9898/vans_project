@@ -20,7 +20,7 @@
 //pc 
 #pcHeader{
     
-    > .max1420{height: 102px;}
+    > .p_r{height: 102px;}
     .logo{
         padding-top: 20px;
         a{
@@ -103,6 +103,29 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
 
 @media screen and (max-width: 1440px) {
     // #header
-
+    #pcHeader{
+        > .max1420{max-width: 1220px;}    
+    }
+    .pcnav_wrap{
+        .pcGnb{
+            > ul{max-width: 1220px;
+            }
+            .dep2_wrap{position: absolute;top: 76px;left: 0;width: 100%;background: $black;border-top: 1px solid #8c8c8c;}
+            .dep2{max-width: 1220px;}
+            .board:first-child{background: url("../images/common/-e-right.png") no-repeat right 31px top 41px;}
+        }
+        .util_wrap{
+            .util{right: 95px;}
+        }
+    }
     // footer
   }
+
+  //태블릿
+  @media screen and (max-width: 1080px) {
+      //header
+      #mHeader{
+          
+        .mnav_wrap{display:none;position: fixed;top: 0;left: 0;width: 100%;height: 100vh;overflow-y: hidden;background: $white;}
+  }
+}

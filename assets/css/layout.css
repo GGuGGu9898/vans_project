@@ -24,7 +24,7 @@
   .header .customBtn {
     right: 0; }
 
-#pcHeader > .max1420 {
+#pcHeader > .p_r {
   height: 102px; }
 #pcHeader .logo {
   padding-top: 20px; }
@@ -166,5 +166,35 @@ footer {
           left: 20px; }
       footer .footerContent .innerContent .insurance {
         width: 60%; }
+
+@media screen and (max-width: 1440px) {
+  #pcHeader > .max1420 {
+    max-width: 1220px; }
+
+  .pcnav_wrap .pcGnb > ul {
+    max-width: 1220px; }
+  .pcnav_wrap .pcGnb .dep2_wrap {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    border-top: 1px solid #8c8c8c; }
+  .pcnav_wrap .pcGnb .dep2 {
+    max-width: 1220px; }
+  .pcnav_wrap .pcGnb .board:first-child {
+    background: url("../images/common/-e-right.png") no-repeat right 31px top 41px; }
+  .pcnav_wrap .util_wrap .util {
+    right: 95px; } }
+@media screen and (max-width: 1080px) {
+  #mHeader .mnav_wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    background: #ffffff; } }
 
 /*# sourceMappingURL=layout.css.map */
