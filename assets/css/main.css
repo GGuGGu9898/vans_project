@@ -403,8 +403,11 @@
   #cnt5 .tabpanel ul {
     padding-top: 3.22vw; }
   #cnt5 .tabpanel .squareSt {
-    border: 0.2vw solid #000000;
-    width: 23.4vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0.19vw solid #000000;
+    width: 100%;
     margin-bottom: 1.87vw; }
     #cnt5 .tabpanel .squareSt img {
       z-index: -1;
@@ -425,7 +428,9 @@
         font-size: 2.5vw;
         bottom: 1.19vw; }
   #cnt5 .tabpanel li {
-    margin-left: 23px; }
+    float: left;
+    width: 32.253%;
+    margin-left: 1.620%; }
   #cnt5 .tabpanel li:nth-child(1), #cnt5 .tabpanel li:nth-child(4) {
     margin-left: 0; }
   #cnt5 #sellTab .tabpanel {
@@ -444,10 +449,13 @@
       left: 0;
       color: #ffffff; }
     #cnt6 .lookbook h3 {
-      font-size: 3.54vw;
-      line-height: 3.95vw;
+      font-size: 4vw;
+      line-height: 4.2vw;
       top: 3.12vw; }
       #cnt6 .lookbook h3::after {
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        background-size: cover !important;
         content: "";
         background: url("../images/main/diamond.png") no-repeat;
         position: absolute;
@@ -458,10 +466,12 @@
     #cnt6 .lookbook p {
       font-size: 0.62vw;
       top: 25.67vw; }
-    #cnt6 .lookbook .pic {
+    #cnt6 .lookbook div:not(.texture_plastic) {
       float: left; }
-    #cnt6 .lookbook .pic:nth-child(2), #cnt6 .lookbook .pic:nth-child(5) {
-      float: right; }
+    #cnt6 .lookbook .img_top_left, #cnt6 .lookbook .img_btm_right {
+      width: 43.662%; }
+    #cnt6 .lookbook .img_top_right, #cnt6 .lookbook .img_btm_left {
+      width: 56.338%; }
     #cnt6 .lookbook .texture_plastic {
       -webkit-background-size: cover !important;
       -moz-background-size: cover !important;

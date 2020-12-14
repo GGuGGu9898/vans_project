@@ -122,19 +122,32 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
   }
 
   //태블릿
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 1024px) {
       //header
+      html, body {
+        max-width: 100%;
+        
+        }
       #pcHeader{display: none;}
-      #mHeader{display: block;
-          .topHeader{padding: 0 20px;
+      #mHeader{display: block;max-width: 1024px;width: 100%;margin: 0 auto;height: 102px;
+          .topHeader{max-width: 1024px;width: 100%;margin: 0 auto;
           .logo{
-              padding-top: 20px;
+              padding-top: 24px;max-width: 1024px;width: 100%;margin: 0 auto;
               a{
                   width: 114px;height: 61px;
               }
-          }
-          }
-          .mnavOpenBtn, .mcustomBtn{font-size: 15px;}
-          .mnav_wrap{position: fixed;top: 0;left: 0;width: 100%;height: 100vh;overflow-y: hidden;background: $white;}
-  }
+            }
+            .mnav_wrap{
+                display: block;position: fixed;top: 0;left: 0;width: 100%;height: 100%;overflow-y: auto;background: $white;z-index: 1000;
+                >div{position: relative;
+                    .m_util{
+                        position: absolute;display: block;left: 52vw;;float: right;margin:2vw;
+                    li{float: left;margin-right: 5vw;}
+                    }
+                }
+            
+            }
+        }
+          .mnavOpenBtn, .mcustomBtn{font-size: 18px;margin: 0 15px;}
+   }       
 }

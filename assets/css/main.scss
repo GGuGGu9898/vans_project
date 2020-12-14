@@ -166,7 +166,8 @@
     .tabpanel{
         ul{padding-top: 3.22vw;}
         .squareSt{
-            border: 0.20vw solid $black;width: 23.4vw;margin-bottom: 1.87vw;
+            @include border-box;
+            border: 0.19vw solid $black;width: 100%;margin-bottom: 1.87vw;
             img{z-index: -1;width: 100%;height: auto;}
             .txtWrap{height: 8.90vw;background-color: $white;position: relative;margin-left: 1.56vw;
                 strong{font-size: 1.3vw;margin-top: 1.4vw;line-height: 1.56vw;display: inline-block;
@@ -175,8 +176,8 @@
                 }
 
             }
-        }  
-        li{margin-left: 23px;}
+        }   
+        li{float: left;width: 32.253%;margin-left: 1.620%;}//margin-left: 23px;
         li:nth-child(1),li:nth-child(4){margin-left: 0;}
     }
     #sellTab .tabpanel{display: none;}
@@ -186,16 +187,16 @@
 #cnt6{padding-top: 7.81vw;
     .lookbook{position: relative;
         h3,p{margin-left: 2.13vw;position: absolute;left: 0;color: $white;}
-        h3{font-size: 3.54vw;line-height: 3.95vw;top: 3.12vw;
-            &::after{content: "";background: url("../images/main/diamond.png") no-repeat;position: absolute;width: 1.77vw;height: 5.41vw;top:15.27vw;left: 0;}
+        h3{font-size: 4vw;line-height: 4.2vw;top: 3.12vw;
+            &::after{
+                @include bgsize(cover);
+                content: "";background: url("../images/main/diamond.png") no-repeat;position: absolute;width: 1.77vw;height: 5.41vw;top:15.27vw;left: 0;
+            }
         }
         p{font-size: 0.62vw;top: 25.67vw;}
-        .pic{
-            float: left;
-        }
-        .pic:nth-child(2),.pic:nth-child(5){
-            float: right;
-        }
+        div:not(.texture_plastic){float: left;}
+        .img_top_left, .img_btm_right{width: 43.662%;}
+        .img_top_right, .img_btm_left{width: 56.338%;}
         .texture_plastic{
         @include bgsize(cover);
         position: absolute;top: 0;width: 100%;height: 100%;z-index: 200;background: url("../images/main/plastic.png") no-repeat ; opacity: .9;
