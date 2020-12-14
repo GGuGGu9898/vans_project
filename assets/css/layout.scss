@@ -12,9 +12,9 @@
     .logo{
         text-align: center;
     }
-    .navOpenBtn, .customBtn{position: absolute;top: 44px;font-weight: 500;}
-    .navOpenBtn{left: 0;}
-    .customBtn{right: 0;}
+    .navOpenBtn, .customBtn, .mnavOpenBtn,.mcustomBtn{position: absolute;top: 44px;font-weight: 500;}
+    .navOpenBtn, .mnavOpenBtn{left: 0;}
+    .customBtn, .mcustomBtn{right: 0;}
 }
 
 //pc 
@@ -68,7 +68,7 @@
 
 //mobile
 #mHeader{display:none;
-.mnav_wrap{display:none;position: fixed;top: 0;left: 0;width: 100%;height: 100vh;overflow-y: hidden;background: $white;}
+.mnav_wrap{display:none;}
 }
 
 //footer
@@ -124,8 +124,17 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
   //태블릿
   @media screen and (max-width: 1080px) {
       //header
-      #mHeader{
-          
-        .mnav_wrap{display:none;position: fixed;top: 0;left: 0;width: 100%;height: 100vh;overflow-y: hidden;background: $white;}
+      #pcHeader{display: none;}
+      #mHeader{display: block;
+          .topHeader{padding: 0 20px;
+          .logo{
+              padding-top: 20px;
+              a{
+                  width: 114px;height: 61px;
+              }
+          }
+          }
+          .mnavOpenBtn, .mcustomBtn{font-size: 15px;}
+          .mnav_wrap{position: fixed;top: 0;left: 0;width: 100%;height: 100vh;overflow-y: hidden;background: $white;}
   }
 }

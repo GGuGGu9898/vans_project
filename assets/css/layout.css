@@ -15,13 +15,13 @@
   z-index: 900; }
   .header .logo {
     text-align: center; }
-  .header .navOpenBtn, .header .customBtn {
+  .header .navOpenBtn, .header .customBtn, .header .mnavOpenBtn, .header .mcustomBtn {
     position: absolute;
     top: 44px;
     font-weight: 500; }
-  .header .navOpenBtn {
+  .header .navOpenBtn, .header .mnavOpenBtn {
     left: 0; }
-  .header .customBtn {
+  .header .customBtn, .header .mcustomBtn {
     right: 0; }
 
 #pcHeader > .p_r {
@@ -103,14 +103,7 @@
 #mHeader {
   display: none; }
   #mHeader .mnav_wrap {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow-y: hidden;
-    background: #ffffff; }
+    display: none; }
 
 footer {
   position: relative;
@@ -187,14 +180,27 @@ footer {
   .pcnav_wrap .util_wrap .util {
     right: 95px; } }
 @media screen and (max-width: 1080px) {
-  #mHeader .mnav_wrap {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow-y: hidden;
-    background: #ffffff; } }
+  #pcHeader {
+    display: none; }
+
+  #mHeader {
+    display: block; }
+    #mHeader .topHeader {
+      padding: 0 20px; }
+      #mHeader .topHeader .logo {
+        padding-top: 20px; }
+        #mHeader .topHeader .logo a {
+          width: 114px;
+          height: 61px; }
+    #mHeader .mnavOpenBtn, #mHeader .mcustomBtn {
+      font-size: 15px; }
+    #mHeader .mnav_wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: hidden;
+      background: #ffffff; } }
 
 /*# sourceMappingURL=layout.css.map */
