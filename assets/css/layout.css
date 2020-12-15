@@ -178,6 +178,9 @@ footer {
 #mfooter {
   display: none; }
 
+#mfooter {
+  display: none; }
+
 @media screen and (max-width: 1440px) {
   #pcHeader > .max1420 {
     max-width: 1220px; }
