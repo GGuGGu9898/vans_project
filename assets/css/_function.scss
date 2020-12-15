@@ -1,0 +1,3 @@
+@function vw-calc($px, $ratio: 1.07, $viewport: 770) {
+    $vwSize: $px * $ratio / ($viewport / 100);
+    @return #{$vwSize}vw;}

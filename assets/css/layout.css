@@ -127,36 +127,56 @@ footer {
       footer .footerContent .innerContent .grid {
         display: flex; }
         footer .footerContent .innerContent .grid > * {
-          padding-left: 20px; }
+          padding-left: 3vw; }
         footer .footerContent .innerContent .grid .footerSt {
           width: 16%; }
         footer .footerContent .innerContent .grid dl dt {
           padding-bottom: 5px;
           font-weight: 500;
           color: #ffffffe3;
-          font-size: 15px; }
+          font-size: 20px; }
         footer .footerContent .innerContent .grid dl dd {
           margin-top: 8px; }
         footer .footerContent .innerContent .grid .newsletter-field {
-          margin-bottom: 10px; }
-          footer .footerContent .innerContent .grid .newsletter-field .input-textfield {
+          margin-bottom: 10px;
+          font-size: 0; }
+          footer .footerContent .innerContent .grid .newsletter-field > * {
             display: inline-block;
-            position: relative; }
-      footer .footerContent .innerContent .grid + .grid {
-        margin-top: 35px; }
-      footer .footerContent .innerContent .company {
-        position: relative;
-        padding-left: 265px;
-        width: 40%; }
-        footer .footerContent .innerContent .company .footerLogo {
-          position: absolute;
-          background: url("../images/common/footerLogo.png") no-repeat;
-          height: 63px;
-          width: 170px;
-          top: 5px;
-          left: 20px; }
-      footer .footerContent .innerContent .insurance {
-        width: 60%; }
+            vertical-align: middle; }
+          footer .footerContent .innerContent .grid .newsletter-field input {
+            width: 12vw;
+            height: 1vw; }
+          footer .footerContent .innerContent .grid .newsletter-field button {
+            -webkit-background-size: cover !important;
+            -moz-background-size: cover !important;
+            background-size: cover !important;
+            background: url(../images/common/2.png) no-repeat center;
+            width: 0.46vw;
+            height: 0.83vw;
+            margin: 10px; }
+        footer .footerContent .innerContent .grid .input-form-group span {
+          font-size: 9px; }
+        footer .footerContent .innerContent .grid .input-form-group a {
+          font-size: 7px; }
+    footer .footerContent .grid + .grid {
+      margin-top: 100px; }
+    footer .footerContent .company {
+      position: relative;
+      padding-left: 290px !important;
+      width: 40%; }
+      footer .footerContent .company .footerLogo {
+        position: absolute;
+        background: url("../images/common/footerLogo.png") no-repeat;
+        height: 63px;
+        width: 170px;
+        top: 5px;
+        left: 20px;
+        margin-left: 2vw; }
+    footer .footerContent .insurance {
+      width: 60%; }
+
+#mfooter {
+  display: none; }
 
 @media screen and (max-width: 1440px) {
   #pcHeader > .max1420 {
@@ -176,7 +196,10 @@ footer {
   .pcnav_wrap .pcGnb .board:first-child {
     background: url("../images/common/-e-right.png") no-repeat right 31px top 41px; }
   .pcnav_wrap .util_wrap .util {
-    right: 95px; } }
+    right: 95px; }
+
+  #mfooter {
+    display: none; } }
 @media screen and (max-width: 1080px) {
   #pcHeader {
     display: none; }
@@ -209,15 +232,16 @@ footer {
       overflow-y: auto;
       background: #ffffff;
       z-index: 1000; }
-      #mHeader .mnav_wrap > div {
+      #mHeader .mnav_wrap > div:not(.x) {
         position: relative; }
-        #mHeader .mnav_wrap > div .m_util {
+        #mHeader .mnav_wrap > div:not(.x) .m_util {
           position: absolute;
           display: block;
-          left: 52vw;
+          right: 0;
           float: right;
-          margin: 2vw; }
-          #mHeader .mnav_wrap > div .m_util li {
+          margin: 2vw -0.6vw;
+          font-size: 1.66vw; }
+          #mHeader .mnav_wrap > div:not(.x) .m_util li {
             float: left;
             margin-right: 5vw; }
       #mHeader .mnav_wrap .m_Gnb {
@@ -248,14 +272,96 @@ footer {
             font-weight: 300;
             letter-spacing: 1.28px;
             padding: 2.12vw 0 5.25vw;
-            line-height: 1.3; }
+            line-height: 1.5; }
     #mHeader .mnavOpenBtn, #mHeader .mcustomBtn {
-      font-size: 18px;
+      font-size: 1.66vw;
       margin: 0 15px; }
 
-  .btn_close {
+  .x {
+    height: 3.148vw;
+    width: 3.148vw;
     position: absolute;
     top: 2vw;
-    left: 5%; } }
+    left: 5%; }
+
+  #footer {
+    display: none; }
+
+  #mfooter {
+    display: inline-block;
+    position: relative;
+    clear: both;
+    min-height: 150px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    font-size: 12px;
+    color: #92929D;
+    background: #1c1c1c;
+    margin-top: 10vw; }
+    #mfooter .footerContent {
+      max-width: 1080px;
+      margin: 0 auto;
+      line-height: 18px; }
+      #mfooter .footerContent .innerContent {
+        color: #92929D;
+        /* 미디어쿼리로 어떤기계던 100% */ }
+        #mfooter .footerContent .innerContent::after {
+          content: "";
+          display: block;
+          margin-top: 20px; }
+        #mfooter .footerContent .innerContent .grid {
+          display: flex; }
+          #mfooter .footerContent .innerContent .grid > * {
+            padding-left: 20px; }
+          #mfooter .footerContent .innerContent .grid .footerSt {
+            width: 25%;
+            margin-top: 10px; }
+          #mfooter .footerContent .innerContent .grid dl dt {
+            padding-bottom: 5px;
+            font-weight: 500;
+            color: #ffffffe3;
+            font-size: 15px; }
+          #mfooter .footerContent .innerContent .grid dl dd {
+            margin-top: 8px; }
+          #mfooter .footerContent .innerContent .grid .sns {
+            -webkit-background-size: cover !important;
+            -moz-background-size: cover !important;
+            background-size: cover !important;
+            width: 3.22vw;
+            height: 3.22vw; }
+        #mfooter .footerContent .innerContent .footerBig {
+          display: block;
+          max-width: 1080px;
+          margin: 0 auto;
+          width: 100%;
+          padding: 20px; }
+          #mfooter .footerContent .innerContent .footerBig dt {
+            padding-bottom: 5px;
+            font-weight: 500;
+            color: #ffffffe3;
+            font-size: 15px;
+            text-align: left; }
+          #mfooter .footerContent .innerContent .footerBig dd {
+            margin-top: 8px; }
+          #mfooter .footerContent .innerContent .footerBig .newsletter-field {
+            margin-bottom: 10px; }
+            #mfooter .footerContent .innerContent .footerBig .newsletter-field .input-textfield {
+              display: inline-block;
+              position: relative; }
+              #mfooter .footerContent .innerContent .footerBig .newsletter-field .input-textfield input {
+                margin-top: 20px;
+                width: 70%;
+                height: 3vw;
+                border: none; }
+            #mfooter .footerContent .innerContent .footerBig .newsletter-field .btn_join {
+              background: url(../images/common/2.png) no-repeat center; }
+        #mfooter .footerContent .innerContent .grid + .grid {
+          margin-top: 35px; }
+        #mfooter .footerContent .innerContent .company {
+          position: relative;
+          width: 100%;
+          padding-top: 40px;
+          padding-left: 0 !important;
+          border-top: 1px solid #c8c8c8; } }
 
 /*# sourceMappingURL=layout.css.map */

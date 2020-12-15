@@ -76,28 +76,37 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
             /* 미디어쿼리로 어떤기계던 100% */
         &::after{content:"";display: block;margin-top: 20px;}
         .grid{display: flex;
-        > *{padding-left: 20px;}
+        > *{padding-left: 3vw;}
         .footerSt{width: 16%;}
         dl{
-            dt{padding-bottom: 5px;font-weight: 500;color: #ffffffe3;font-size: 15px;}
+            dt{padding-bottom: 5px;font-weight: 500;color: #ffffffe3;font-size: 20px;}
             dd{margin-top: 8px;}
         }
-            .newsletter-field{margin-bottom: 10px;
-            .input-textfield {display: inline-block;position: relative;}
+            .newsletter-field{margin-bottom: 10px;font-size: 0;
+                >*{display: inline-block;vertical-align: middle;}
+            input{width: 12vw;height: 1vw;}
+            button{@include bgsize(cover);
+                background:url(../images/common/2.png) no-repeat center;width: 0.46vw;height: 0.83vw;margin: 10px;}
+        }
+            .input-form-group{
+                span{font-size: 9px;}
+                a{font-size: 7px;}
+            }
             }
         
             }
-            .grid + .grid{margin-top: 35px;}
+            .grid + .grid{margin-top: 100px;}
             .company{position: relative;
-                padding-left: 265px;width: 40%;
+                padding-left: 290px !important;width: 40%;
                 .footerLogo{position: absolute;
                 background: url("../images/common/footerLogo.png") no-repeat;height: 63px;width: 170px;top: 5px;
-                left: 20px;}
+                left: 20px;margin-left: 2vw;}
             }
             .insurance{width: 60%;}
         }
     }
-}
+
+#mfooter{display: none;}
 
 @media screen and (max-width: 1440px) {
     // #header
@@ -117,6 +126,7 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
         }
     }
     // footer
+    #mfooter{display: none;}
   }
 
   //태블릿
@@ -134,9 +144,9 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
         }
         .mnav_wrap{
             visibility: hidden;position: fixed;top: -100%;left: 0;width: 100%;height: 100%;overflow-y: auto;background: $white;z-index: 1000;
-            > div{position: relative;
+            > div:not(.x){position: relative;
                 .m_util{
-                    position: absolute;display: block;left: 52vw;;float: right;margin:2vw;
+                    position: absolute;display: block;right: 0;float: right;margin:2vw -0.6vw;font-size: 1.66vw;
                 li{float: left;margin-right: 5vw;}
                 }
             }
@@ -154,11 +164,55 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
             
             }
             .depth3{font-size: 2.5vw;font-weight: 300;letter-spacing: 1.28px;padding: 2.12vw 0 5.25vw;
-            line-height: 1.3;}
+            line-height: 1.5;}
                 }
             }
         }
-        .mnavOpenBtn, .mcustomBtn{font-size: 18px;margin: 0 15px;}
+        .mnavOpenBtn, .mcustomBtn{font-size: 1.66vw;margin: 0 15px;}
     }
-    .btn_close{position: absolute;top: 2vw;left: 5%;}
+        .x{height: 3.148vw;width:3.148vw;position: absolute;top: 2vw;left: 5%;}
+
+    //footer
+    #footer{display: none;}
+
+    #mfooter{display:inline-block; position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 40px 30px;font-size: 12px;color: #92929D;background: #1c1c1c;margin-top: 10vw;
+        .footerContent{max-width: 1080px;margin: 0 auto;line-height: 18px;
+            .innerContent{color: #92929D;
+                /* 미디어쿼리로 어떤기계던 100% */
+            &::after{content:"";display: block;margin-top: 20px;}
+            .grid{display: flex;
+            > *{padding-left: 20px;}
+            .footerSt{width: 25%;margin-top: 10px;}
+            dl{
+                dt{padding-bottom: 5px;font-weight: 500;color: #ffffffe3;font-size: 15px;}
+                dd{margin-top: 8px;}
+            }
+            .sns{
+                @include bgsize(cover);
+                width: 3.22vw;height: 3.22vw;
+            }
+        }
+        .footerBig{display: block;max-width: 1080px;margin: 0 auto;width: 100%;padding:20px;
+            dt{padding-bottom: 5px;font-weight: 500;color: #ffffffe3;font-size: 15px;text-align: left;}
+                dd{margin-top: 8px;}
+            .newsletter-field{margin-bottom: 10px;
+            .input-textfield {display: inline-block;position: relative;
+            input{
+                margin-top: 20px;width: 70%;height: 3vw;border: none;}
+            }
+            .btn_join{background:url(../images/common/2.png) no-repeat center;}
+            }
+        }
+                .grid + .grid{margin-top: 35px;}
+                .company{position: relative;width: 100%;padding-top:40px;padding-left:0 !important;
+                   border-top: 1px solid #c8c8c8;
+                }
+            }
+        }
    }       
+}
+
+//모바일
+@media screen and (max-width: 770px) {
+    
+}

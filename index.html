@@ -382,8 +382,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="btn_close last" type="button"><img src="assets/images/common/close.png"
-                            alt="네비게이션 닫기"></button>
+                    <div class="x">
+                        <button class="btn_close last" type="button"><img src="assets/images/common/close.png"
+                                alt="네비게이션 닫기"></button>
+                    </div>
                 </div>
                 <button class="mcustomBtn f_r">CUSTOMS
                     <span class="blind-b">나만의 신발 만들기</span>
@@ -405,45 +407,48 @@
             </div>
         </section>
         <section id="cnt2" class="section max1420">
-            <div class="bigSquare p_r">
-                <h2 class="p_a">FIND YOUR STYLE!</h2>
-                <div id="checkerPlastic"></div>
-                <ul>
-                    <li class="p_a authentic shoeChoose">
-                        <a href="">
-                            <span>AUTHENTIC</span>
-                            <img src="assets/images/main/authentic.png"
-                                alt="Vans 브랜드와 함께 처음 선보인 모델이자 고무와플아웃솔과 튼튼한 내구성을 가진 신발인 어센틱">
-                        </a>
-                    </li>
-                    <li class="p_a hi shoeChoose">
-                        <a href="">
-                            <span>SK8-HI</span>
-                            <img src="assets/images/main/sk8_hi.png"
-                                alt="발목을 보호해주는 하이-탑 실루엣을 가진 최초의 스케이트 보드 신발인 sk8-hi">
-                        </a>
-                    </li>
-                    <li class="p_a oldSkool shoeChoose">
-                        <a href="">
-                            <span>OLD SKOOL</span>
-                            <img src="assets/images/main/oldSkool.png" alt="Vans 의 심볼 ‘사이드스트라이프’가 적용된 최초의 반스 신발인 올드 스쿨">
-                        </a>
-                    </li>
-                    <li class="p_a era shoeChoose">
-                        <a href="">
-                            <span>ERA</span>
-                            <img src="assets/images/main/era.png" alt="스케이터에 의해 디자인된 최초의 스케이트 신발인 에라">
-                        </a>
-                    </li>
-                    <li class="p_a slipOn shoeChoose">
-                        <a href="">
-                            <span>SLIP ON</span>
-                            <img src="assets/images/main/slipOn.png" alt="신발끈이 없는 디자인이 특징인 신발인 슬립온">
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+                <div class="bigSquare p_r">
+                    <div>
+                        <h2 class="p_a">FIND YOUR STYLE!</h2>
+                        <div id="checkerPlastic"></div>
+                        <ul>
+                            <li class="p_a authentic shoeChoose">
+                                <a href="">
+                                    <span>AUTHENTIC</span>
+                                    <img src="assets/images/main/authentic.png"
+                                        alt="Vans 브랜드와 함께 처음 선보인 모델이자 고무와플아웃솔과 튼튼한 내구성을 가진 신발인 어센틱">
+                                </a>
+                            </li>
+                            <li class="p_a hi shoeChoose">
+                                <a href="">
+                                    <span>SK8-HI</span>
+                                    <img src="assets/images/main/sk8_hi.png"
+                                        alt="발목을 보호해주는 하이-탑 실루엣을 가진 최초의 스케이트 보드 신발인 sk8-hi">
+                                </a>
+                            </li>
+                            <li class="p_a oldSkool shoeChoose">
+                                <a href="">
+                                    <span>OLD SKOOL</span>
+                                    <img src="assets/images/main/oldSkool.png" alt="Vans 의 심볼 ‘사이드스트라이프’가 적용된 최초의 반스 신발인 올드 스쿨">
+                                </a>
+                            </li>
+                            <li class="p_a era shoeChoose">
+                                <a href="">
+                                    <span>ERA</span>
+                                    <img src="assets/images/main/era.png" alt="스케이터에 의해 디자인된 최초의 스케이트 신발인 에라">
+                                </a>
+                            </li>
+                            <li class="p_a slipOn shoeChoose">
+                                <a href="">
+                                    <span>SLIP ON</span>
+                                    <img src="assets/images/main/slipOn.png" alt="신발끈이 없는 디자인이 특징인 신발인 슬립온">
+                                </a>
+                            </li>
+        
+                        </ul>
+                    </div>
+                </div>
+            
 
         </section>
         <section id="cnt3" class="section max1420">
@@ -731,6 +736,7 @@
                 <div class="texture_plastic"></div>
             </div>
         </section>
+        <!-- pc footer -->
         <footer id="footer">
             <div class="footerContent">
                 <div class="innerContent">
@@ -759,8 +765,7 @@
                                     <div class="newsletter-field">
                                         <span class="input-textfield"
                                             data-component-textfield="{required:true, errMsg:잘못된 이메일 형식입니다.,type:email}">
-                                            <label for="targetValue">Enter Email Address</label>
-                                            <input type="text" id="targetValue" name="targetValue">
+                                            <input type="text" id="targetValue" name="targetValue" placeholder="Enter Email Address">
                                         </span>
                                         <button href="#" class="btn_join btn-link"><i
                                                 class="icon-arrow_right"></i></button>
@@ -804,16 +809,16 @@
                             <a class="footerLogo" href="https://gguggu9898.github.io/vans_project/"><span
                                     class="blind-b">반스</span></a>
                             <span>회사명: 유한회사 브이에프 코리아</span> /
-                            <span>대표이사: TZE CHOI THEODORE PANG</span> / <br class="mobile-br">
-                            <span>사업자 등록번호: 220-88-43561</span> <br>
+                            <span>대표이사: TZE CHOI THEODORE PANG</span> /
+                            <span>사업자 등록번호: 220-88-43561</span> 
                             <span>통신판매업 신고번호: 2013-서울강남-02918호</span> /
                             <a href="https://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2013322016230202918&pageUnit=10&searchCnd=wrkr_no&searchKrwd=2208843561&pageIndex=1"
-                                target="blank_" class="comfirm">사업자정보확인</a> / <br class="mobile-br">
-                            <span>개인정보 책임자: 장성철</span> <br>
-                            <span>주소: 서울특별시 강남구 테헤란로 317 동훈타워 18층</span> / <br class="mobile-br">
+                                target="blank_" class="comfirm">사업자정보확인</a> / 
+                            <span>개인정보 책임자: 장성철</span> 
+                            <span>주소: 서울특별시 강남구 테헤란로 317 동훈타워 18층</span> / 
                             <span>E-mail 문의: daeun_jeong@vfc.com</span>
-                            <span>고객센터(평일 09:00 ~ 18:00) 1522-1882</span> <br>
-                            <span>&copy;유한회사 브이에프 코리아. All Rights Reserved.</span> <br>
+                            <span>고객센터(평일 09:00 ~ 18:00) 1522-1882</span> 
+                            <span>&copy;유한회사 브이에프 코리아. All Rights Reserved.</span> 
                             <span>California Transparency in Supply Chain Act of 2010</span>
                         </address>
                         <div>
@@ -826,6 +831,88 @@
                                     확인하기</a><br>
                             </span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- mobile footer -->
+        <footer id="mfooter">
+            <div class="footerContent">
+                <div class="innerContent">
+                    <div class="grid">
+                        <dl class="footerSt">
+                            <dt>ABOUT</dt>
+                            <dd><a href="">반스에 대하여</a></dd>
+                            <dd><a href="">고객센터</a></dd>
+                        </dl>
+                        <dl class="footerSt">
+                            <dt>SHOPPING</dt>
+                            <dd><a href="">회원가입</a></dd>
+                            <dd><a href="">주문 / 배송 조회</a></dd>
+                        </dl>
+                        <dl class="footerSt">
+                            <dt>LEGAL</dt>
+                            <dd><a href="">이용약관</a></dd>
+                            <dd><a href="" class="big">개인정보처리방침</a></dd>
+                            <dd><a href="">청소년보호정책</a></dd>
+                        </dl>
+                        <dl class="footerSt">
+                            <dt>FOLLOW US</dt>
+                            <dd>
+                                <div class="footer_sns">
+                                    <a href="https://www.instagram.com/vans_korea/" target="_blank"
+                                        class="sns instagram" title="반스 인스타그램 바로가기"><img
+                                            src="assets/images/common/instagram.png" alt="instagram 바로가기"></a>
+                                    <a href="https://www.facebook.com/VANS/" target="_blank" class="sns facebook"
+                                        title="반스 페이스북 바로가기"><img src="assets/images/common/facebook.png"
+                                            alt="facebook 바로가기"></a>
+                                    <a href="https://www.youtube.com/user/VansShoes66" target="_blank"
+                                        class="sns youtube" title="반스 유투브 바로가기"><img
+                                            src="assets/images/common/youtube.png" alt="youtube 바로가기"></a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <dl class="footerBig">
+                            <dt>SUBSCRIBE</dt>
+                            <div class="newsletter-conts"
+                                data-module-newsletter="{successMsg:정상적으로 등록 되었습니다.,loggedIn:null}">
+                                <form method="POST" action="/newsLetter/add">
+                                    <div class="newsletter-field p_r">
+                                            <input type="text" id="targetValue" name="targetValue" placeholder="Enter Email Address">
+                                        </span>
+                                        <button href="#" class="btn_join btn-link"></button>
+                                    </div>
+                                    <div class="input-form-group">
+                                        <span class="input-checkbox checked"
+                                            data-component-checkbox="{required:true,errMsg:개인정보처리방침을 체크해주세요}">
+                                            <input type="checkbox" id="newsletter-chk" name="newsletter-chk">
+                                            <label for="newsletter-chk">
+                                                <i class="brz-icon-checkbox"><span class="blind-b">rediobox</span></i>
+                                                <span class="label">본인은 이용약관, 개인정보수집동의에 관한 내용을 읽고 이해했습니다.</span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                    <input type="hidden" name="csrfToken"
+                                        value="QJM0-IUET-P9T6-FL3P-BMXW-3ANX-NCOX-LSRR">
+                                </form>
+                            </div>
+                        </dl>
+                    <div class="grid">
+                        <address class="company">
+                            <span>회사명: 유한회사 브이에프 코리아</span> /
+                            <span>대표이사: TZE CHOI THEODORE PANG</span> / <br class="mobile-br">
+                            <span>사업자 등록번호: 220-88-43561</span> 
+                            <span>통신판매업 신고번호: 2013-서울강남-02918호</span> /
+                            <a href="https://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2013322016230202918&pageUnit=10&searchCnd=wrkr_no&searchKrwd=2208843561&pageIndex=1"
+                                target="blank_" class="comfirm">사업자정보확인</a> / <br class="mobile-br">
+                            <span>개인정보 책임자: 장성철</span> 
+                            <span>주소: 서울특별시 강남구 테헤란로 317 동훈타워 18층</span> / <br class="mobile-br">
+                            <span>E-mail 문의: daeun_jeong@vfc.com</span>
+                            <span>고객센터(평일 09:00 ~ 18:00) 1522-1882</span>
+                            <span>&copy;유한회사 브이에프 코리아. All Rights Reserved.</span>
+                            <span>California Transparency in Supply Chain Act of 2010</span>
+                        </address>
                     </div>
                 </div>
             </div>
