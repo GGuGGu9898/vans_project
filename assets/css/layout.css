@@ -3,7 +3,8 @@
 기본pc => 태블릿 => 모바일
 */
 #wrap {
-  min-width: 20rem; }
+  min-width: 20rem;
+  overflow: hidden; }
 
 /* 320px => ? rem */
 .header {

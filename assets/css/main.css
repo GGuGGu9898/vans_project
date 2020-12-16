@@ -812,9 +812,72 @@
         height: 151px;
         text-align: center;
         line-height: 151px;
-        font-size: 20px; } }
+        font-size: 20px; }
+
+  #cnt3 {
+    padding-top: 133px;
+    position: relative; }
+    #cnt3 #faqAccodion .accoheader, #cnt3 #faqAccodion .accopanel {
+      height: 12.03vw;
+      line-height: 12.03vw; }
+    #cnt3 #faqAccodion .accoheader {
+      font-size: 3.75vw; }
+    #cnt3 #faqAccodion .accopanel ul li {
+      font-size: 3.125vw; }
+    #cnt3 #faqAccodion .accopanel ul li + li {
+      margin-left: 5.625vw; }
+    #cnt3 .greenEffect {
+      right: 1%;
+      width: 40vw;
+      height: 28.9vw; }
+
+  /* cnt4 */
+  #cnt4 {
+    margin-top: 25vw; }
+
+  /* cnt5 */
+  #cnt5 .tablist li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    height: 7vw;
+    line-height: 7vw;
+    text-align: center;
+    font-size: 2.3vw;
+    border: 0.2vw solid #000000; }
+  #cnt5 .tablist li + li {
+    border-left: none; }
+  #cnt5 .tabpanel ul {
+    padding-top: 3.22vw; }
+  #cnt5 .tabpanel .squareSt .txtWrap {
+    height: 14.9vw;
+    margin-left: 2vw; }
+    #cnt5 .tabpanel .squareSt .txtWrap strong {
+      font-size: 2.8vw;
+      margin-top: 2.2vw;
+      line-height: 3.2vw; }
+    #cnt5 .tabpanel .squareSt .txtWrap p {
+      font-size: 3vw;
+      bottom: 2vw; }
+  #cnt5 .tabpanel li {
+    float: left;
+    width: 49.19%;
+    margin-left: 1.620%; }
+  #cnt5 .tabpanel li:nth-child(1), #cnt5 .tabpanel li:nth-child(3), #cnt5 .tabpanel li:nth-child(5) {
+    margin-left: 0; }
+  #cnt5 .tabpanel li:nth-child(4) {
+    margin-left: 1.620%; }
+
+  #cnt6 .lookbook p {
+    font-size: 0.2vw;
+    top: 32vw; } }
 @media screen and (max-width: 570px) {
   #cnt2 .bigSquare ul li a img {
-    width: 80%; } }
+    width: 80%; }
+
+  #cnt6 .lookbook p {
+    font-size: 0vw; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
 /* 
 기본pc => 태블릿 => 모바일
 */
-#wrap{min-width: 20rem;} /* 320px => ? rem */
+#wrap{min-width: 20rem;overflow: hidden;} /* 320px => ? rem */
 //pc, 모바일 공통
 .header{
     position: fixed;top: 0;left: 0;width: 100%;background: $white;z-index: 900;
