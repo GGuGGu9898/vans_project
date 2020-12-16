@@ -103,7 +103,7 @@
 #mHeader {
   display: none; }
 
-footer {
+#pcfooter {
   position: relative;
   clear: both;
   min-height: 150px;
@@ -113,40 +113,39 @@ footer {
   color: #92929D;
   background: #1c1c1c;
   margin-top: 10vw; }
-  footer .footerContent {
+  #pcfooter .footerContent {
     max-width: 1420px;
     margin: 0 auto 0 auto;
     line-height: 18px; }
-    footer .footerContent .innerContent {
+    #pcfooter .footerContent .innerContent {
       color: #92929D;
       /* 미디어쿼리로 어떤기계던 100% */ }
-      footer .footerContent .innerContent::after {
+      #pcfooter .footerContent .innerContent::after {
         content: "";
         display: block;
         margin-top: 20px; }
-      footer .footerContent .innerContent .grid {
+      #pcfooter .footerContent .innerContent .grid {
         display: flex; }
-        footer .footerContent .innerContent .grid > * {
+        #pcfooter .footerContent .innerContent .grid > * {
           padding-left: 3vw; }
-        footer .footerContent .innerContent .grid .footerSt {
+        #pcfooter .footerContent .innerContent .grid .footerSt {
           width: 16%; }
-        footer .footerContent .innerContent .grid dl dt {
+        #pcfooter .footerContent .innerContent .grid dl dt {
           padding-bottom: 5px;
           font-weight: 500;
           color: #ffffffe3;
           font-size: 20px; }
-        footer .footerContent .innerContent .grid dl dd {
+        #pcfooter .footerContent .innerContent .grid dl dd {
           margin-top: 8px; }
-        footer .footerContent .innerContent .grid .newsletter-field {
-          margin-bottom: 10px;
-          font-size: 0; }
-          footer .footerContent .innerContent .grid .newsletter-field > * {
+        #pcfooter .footerContent .innerContent .grid .newsletter-field {
+          margin-bottom: 10px; }
+          #pcfooter .footerContent .innerContent .grid .newsletter-field > * {
             display: inline-block;
             vertical-align: middle; }
-          footer .footerContent .innerContent .grid .newsletter-field input {
+          #pcfooter .footerContent .innerContent .grid .newsletter-field input {
             width: 12vw;
             height: 1vw; }
-          footer .footerContent .innerContent .grid .newsletter-field button {
+          #pcfooter .footerContent .innerContent .grid .newsletter-field button {
             -webkit-background-size: cover !important;
             -moz-background-size: cover !important;
             background-size: cover !important;
@@ -154,17 +153,17 @@ footer {
             width: 0.46vw;
             height: 0.83vw;
             margin: 10px; }
-        footer .footerContent .innerContent .grid .input-form-group span {
+        #pcfooter .footerContent .innerContent .grid .input-form-group span {
           font-size: 9px; }
-        footer .footerContent .innerContent .grid .input-form-group a {
+        #pcfooter .footerContent .innerContent .grid .input-form-group a {
           font-size: 7px; }
-    footer .footerContent .grid + .grid {
+    #pcfooter .footerContent .grid + .grid {
       margin-top: 100px; }
-    footer .footerContent .company {
+    #pcfooter .footerContent .company {
       position: relative;
       padding-left: 290px !important;
       width: 40%; }
-      footer .footerContent .company .footerLogo {
+      #pcfooter .footerContent .company .footerLogo {
         position: absolute;
         background: url("../images/common/footerLogo.png") no-repeat;
         height: 63px;
@@ -172,37 +171,40 @@ footer {
         top: 5px;
         left: 20px;
         margin-left: 2vw; }
-    footer .footerContent .insurance {
+    #pcfooter .footerContent .insurance {
       width: 60%; }
 
 #mfooter {
   display: none; }
 
-#mfooter {
-  display: none; }
-
 @media screen and (max-width: 1440px) {
-  #pcHeader > .max1420 {
+  .max1420 {
     max-width: 1220px; }
 
-  .pcnav_wrap .pcGnb > ul {
+  #pcHeader .pcnav_wrap .pcGnb > ul {
     max-width: 1220px; }
-  .pcnav_wrap .pcGnb .dep2_wrap {
+  #pcHeader .pcnav_wrap .pcGnb .dep2_wrap {
     position: absolute;
     top: 76px;
     left: 0;
     width: 100%;
     background: #000000;
     border-top: 1px solid #8c8c8c; }
-  .pcnav_wrap .pcGnb .dep2 {
+  #pcHeader .pcnav_wrap .pcGnb .dep2 {
     max-width: 1220px; }
-  .pcnav_wrap .pcGnb .board:first-child {
+  #pcHeader .pcnav_wrap .pcGnb .board:first-child {
     background: url("../images/common/-e-right.png") no-repeat right 31px top 41px; }
-  .pcnav_wrap .util_wrap .util {
+  #pcHeader .pcnav_wrap .util_wrap .util {
     right: 95px; }
 
   #mfooter {
     display: none; } }
+@media screen and (max-width: 1220px) {
+  .max1420 {
+    max-width: 100%; }
+
+  #pcHeader .navOpenBtn, #pcHeader .customBtn {
+    padding: 0 24px; } }
 @media screen and (max-width: 1080px) {
   #pcHeader {
     display: none; }
@@ -287,7 +289,7 @@ footer {
     top: 2vw;
     left: 5%; }
 
-  #footer {
+  #pcfooter {
     display: none; }
 
   #mfooter {
@@ -355,9 +357,11 @@ footer {
                 margin-top: 20px;
                 width: 70%;
                 height: 3vw;
-                border: none; }
+                border: none;
+                vertical-align: middle; }
             #mfooter .footerContent .innerContent .footerBig .newsletter-field .btn_join {
-              background: url(../images/common/2.png) no-repeat center; }
+              background: url(../images/common/2.png) no-repeat center;
+              vertical-align: middle; }
         #mfooter .footerContent .innerContent .grid + .grid {
           margin-top: 35px; }
         #mfooter .footerContent .innerContent .company {

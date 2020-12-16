@@ -70,7 +70,7 @@
 #mHeader{display:none;}
 
 //footer
-footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 60px 10px;font-size: 12px;color: #92929D;background: #1c1c1c;margin-top: 10vw;
+#pcfooter{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 60px 10px;font-size: 12px;color: #92929D;background: #1c1c1c;margin-top: 10vw;
     .footerContent{max-width: 1420px;margin: 0 auto 0 auto;line-height: 18px;
         .innerContent{color: #92929D;
             /* 미디어쿼리로 어떤기계던 100% */
@@ -82,7 +82,7 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
             dt{padding-bottom: 5px;font-weight: 500;color: #ffffffe3;font-size: 20px;}
             dd{margin-top: 8px;}
         }
-            .newsletter-field{margin-bottom: 10px;font-size: 0;
+            .newsletter-field{margin-bottom: 10px;
                 >*{display: inline-block;vertical-align: middle;}
             input{width: 12vw;height: 1vw;}
             button{@include bgsize(cover);
@@ -108,11 +108,10 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
 #mfooter{display: none;}
 
 @media screen and (max-width: 1440px) {
+    .max1420{max-width: 1220px;}
     // #header
     #pcHeader{
-        > .max1420{max-width: 1220px;}    
-    }
-    .pcnav_wrap{
+     .pcnav_wrap{
         .pcGnb{
             > ul{max-width: 1220px;
             }
@@ -124,8 +123,16 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
             .util{right: 95px;}
         }
     }
+}
+   
     // footer
     #mfooter{display: none;}
+  }
+
+  @media screen and (max-width: 1220px) {
+    .max1420{max-width: 100%;}
+    #pcHeader .navOpenBtn, #pcHeader .customBtn{padding: 0 24px;}
+
   }
 
   //태블릿
@@ -172,7 +179,7 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
         .x{height: 3.148vw;width:3.148vw;position: absolute;top: 2vw;left: 5%;}
 
     //footer
-    #footer{display: none;}
+    #pcfooter{display: none;}
 
     #mfooter{display:inline-block; position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 40px 30px;font-size: 12px;color: #92929D;background: #1c1c1c;margin-top: 10vw;
         .footerContent{max-width: 1080px;margin: 0 auto;line-height: 18px;
@@ -197,9 +204,9 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
             .newsletter-field{margin-bottom: 10px;
             .input-textfield {display: inline-block;position: relative;
             input{
-                margin-top: 20px;width: 70%;height: 3vw;border: none;}
+                margin-top: 20px;width: 70%;height: 3vw;border: none;vertical-align: middle;}
             }
-            .btn_join{background:url(../images/common/2.png) no-repeat center;}
+            .btn_join{background:url(../images/common/2.png) no-repeat center;vertical-align: middle;}
             }
         }
                 .grid + .grid{margin-top: 35px;}
@@ -208,10 +215,10 @@ footer{position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 
                 }
             }
         }
-   }       
+   }      
 }
 
 //모바일
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 640px) {
     
 }
