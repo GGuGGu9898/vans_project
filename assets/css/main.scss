@@ -371,12 +371,18 @@
     padding-top: 150px;
    .bigSquare{
        background: url("../images/main/m_bg.png") no-repeat center;padding-bottom: 200%;
-       ul li a img{width: 100%;}
+       ul li a img{width: 100%;
+       }
+       &::after{
+           @include bgsize(cover);
+           content:"";background: url("../images/main/m_redDia.png") no-repeat;width: 11.25vw;height: 30.78vw;position: absolute;top: 17vw;left: 19%;}
     } 
         h2{
             @include bgsize(cover);
             top: 45px;left: calc(50% - 32.3vw);background: url("../images/main/titleCircle.png") no-repeat;width: 64.6vw;height: 19.93vw;font-size: 3vw;line-height: 19.93vw;
-            ::after{content:"";}
+            &::after{
+                @include bgsize(cover);
+                content:"";background: url("../images/main/m_star.png") no-repeat;width: 19.375vw;height: 19.375vw;position: absolute;top: -8vw;}
         }
         .era{
             a{

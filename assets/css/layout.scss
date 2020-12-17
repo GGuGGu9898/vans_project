@@ -181,7 +181,7 @@
     //footer
     #pcfooter{display: none;}
 
-    #mfooter{display:inline-block; position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 40px 30px;font-size: 12px;color: #92929D;background: #1c1c1c;margin-top: 10vw;
+    #mfooter{display:inline-block; position: relative;clear: both;min-height: 150px;margin: 0 auto;padding: 3.703vw 2.777vw;font-size: 1.111vw;color: #92929D;background: #1c1c1c;margin-top: 10vw;
         .footerContent{max-width: 1080px;margin: 0 auto;line-height: 18px;
             .innerContent{color: #92929D;
                 /* 미디어쿼리로 어떤기계던 100% */
@@ -190,16 +190,21 @@
             > *{padding-left: 20px;}
             .footerSt{width: 25%;margin-top: 10px;}
             dl{
-                dt{padding-bottom: 5px;font-weight: 500;color: #ffffffe3;font-size: 15px;}
+                dt{font-size: 2vw;color: #fff;}
                 dd{margin-top: 8px;}
             }
-            .sns{
-                @include bgsize(cover);
-                width: 3.22vw;height: 3.22vw;
+            .footer_sns{
+                div{
+                    @include bgsize(cover);
+                    display: inline-block;width: 3.22vw;height: 3.22vw;
+                    >img{
+                    
+                    width: 3.22vw;height: 3.22vw;}
+                }
             }
         }
         .footerBig{display: block;max-width: 1080px;margin: 0 auto;width: 100%;padding:20px;
-            dt{padding-bottom: 5px;font-weight: 500;color: #ffffffe3;font-size: 15px;text-align: left;}
+            dt{padding-bottom: 5px;color: #ffffffe3;font-size: 2vw;}
                 dd{margin-top: 8px;}
             .newsletter-field{margin-bottom: 10px;
             .input-textfield {display: inline-block;position: relative;
@@ -210,8 +215,9 @@
             }
         }
                 .grid + .grid{margin-top: 35px;}
-                .company{position: relative;width: 100%;padding-top:40px;padding-left:0 !important;
-                   border-top: 1px solid #c8c8c8;
+                .company{padding:3vw 5vw!important;
+                   border-top: 0px solid #c8c8c8;
+                   font-size: 0.5vw;
                 }
             }
         }
@@ -219,6 +225,4 @@
 }
 
 //모바일
-@media screen and (max-width: 640px) {
-    
-}
+

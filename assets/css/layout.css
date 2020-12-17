@@ -299,8 +299,8 @@
     clear: both;
     min-height: 150px;
     margin: 0 auto;
-    padding: 40px 30px;
-    font-size: 12px;
+    padding: 3.703vw 2.777vw;
+    font-size: 1.111vw;
     color: #92929D;
     background: #1c1c1c;
     margin-top: 10vw; }
@@ -323,18 +323,20 @@
             width: 25%;
             margin-top: 10px; }
           #mfooter .footerContent .innerContent .grid dl dt {
-            padding-bottom: 5px;
-            font-weight: 500;
-            color: #ffffffe3;
-            font-size: 15px; }
+            font-size: 2vw;
+            color: #fff; }
           #mfooter .footerContent .innerContent .grid dl dd {
             margin-top: 8px; }
-          #mfooter .footerContent .innerContent .grid .sns {
+          #mfooter .footerContent .innerContent .grid .footer_sns div {
             -webkit-background-size: cover !important;
             -moz-background-size: cover !important;
             background-size: cover !important;
+            display: inline-block;
             width: 3.22vw;
             height: 3.22vw; }
+            #mfooter .footerContent .innerContent .grid .footer_sns div > img {
+              width: 3.22vw;
+              height: 3.22vw; }
         #mfooter .footerContent .innerContent .footerBig {
           display: block;
           max-width: 1080px;
@@ -343,10 +345,8 @@
           padding: 20px; }
           #mfooter .footerContent .innerContent .footerBig dt {
             padding-bottom: 5px;
-            font-weight: 500;
             color: #ffffffe3;
-            font-size: 15px;
-            text-align: left; }
+            font-size: 2vw; }
           #mfooter .footerContent .innerContent .footerBig dd {
             margin-top: 8px; }
           #mfooter .footerContent .innerContent .footerBig .newsletter-field {
@@ -366,10 +366,8 @@
         #mfooter .footerContent .innerContent .grid + .grid {
           margin-top: 35px; }
         #mfooter .footerContent .innerContent .company {
-          position: relative;
-          width: 100%;
-          padding-top: 40px;
-          padding-left: 0 !important;
-          border-top: 1px solid #c8c8c8; } }
+          padding: 3vw 5vw !important;
+          border-top: 0px solid #c8c8c8;
+          font-size: 0.5vw; } }
 
 /*# sourceMappingURL=layout.css.map */

@@ -716,6 +716,17 @@
       padding-bottom: 200%; }
       #cnt2 .bigSquare ul li a img {
         width: 100%; }
+      #cnt2 .bigSquare::after {
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        background-size: cover !important;
+        content: "";
+        background: url("../images/main/m_redDia.png") no-repeat;
+        width: 11.25vw;
+        height: 30.78vw;
+        position: absolute;
+        top: 17vw;
+        left: 19%; }
     #cnt2 h2 {
       -webkit-background-size: cover !important;
       -moz-background-size: cover !important;
@@ -727,8 +738,16 @@
       height: 19.93vw;
       font-size: 3vw;
       line-height: 19.93vw; }
-      #cnt2 h2 ::after {
-        content: ""; }
+      #cnt2 h2::after {
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        background-size: cover !important;
+        content: "";
+        background: url("../images/main/m_star.png") no-repeat;
+        width: 19.375vw;
+        height: 19.375vw;
+        position: absolute;
+        top: -8vw; }
     #cnt2 .era {
       top: 50%;
       left: 50%; }
