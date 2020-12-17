@@ -187,7 +187,7 @@
                 /* 미디어쿼리로 어떤기계던 100% */
             &::after{content:"";display: block;margin-top: 20px;}
             .grid{display: flex;
-            > *{padding-left: 20px;}
+            > *{padding-left: 3.125vw;}
             .footerSt{width: 25%;margin-top: 10px;}
             dl{
                 dt{font-size: 2vw;color: #fff;}
@@ -203,7 +203,7 @@
                 }
             }
         }
-        .footerBig{display: block;max-width: 1080px;margin: 0 auto;width: 100%;padding:20px;
+        .footerBig{display: block;max-width: 1080px;margin: 0 auto;width: 100%;padding:20px 3.125vw;;
             dt{padding-bottom: 5px;color: #ffffffe3;font-size: 2vw;}
                 dd{margin-top: 8px;}
             .newsletter-field{margin-bottom: 10px;
@@ -215,7 +215,7 @@
             }
         }
                 .grid + .grid{margin-top: 35px;}
-                .company{padding:3vw 5vw!important;
+                .company{padding:5vw 3.125vw!important;
                    border-top: 0px solid #c8c8c8;
                    font-size: 0.5vw;
                 }
@@ -225,4 +225,16 @@
 }
 
 //모바일
-
+@media screen and (max-width: 640px){
+    #mfooter{
+        .footerContent{
+            .innerContent{
+        .footerBig{display: none;}
+        .company{padding:10vw 3.125vw 4vw!important;
+            border-top: 0px solid #c8c8c8;
+            font-size: 0.5vw;
+         }
+       }
+    }
+    }
+}   

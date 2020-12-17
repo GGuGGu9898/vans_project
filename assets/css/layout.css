@@ -318,7 +318,7 @@
         #mfooter .footerContent .innerContent .grid {
           display: flex; }
           #mfooter .footerContent .innerContent .grid > * {
-            padding-left: 20px; }
+            padding-left: 3.125vw; }
           #mfooter .footerContent .innerContent .grid .footerSt {
             width: 25%;
             margin-top: 10px; }
@@ -342,7 +342,7 @@
           max-width: 1080px;
           margin: 0 auto;
           width: 100%;
-          padding: 20px; }
+          padding: 20px 3.125vw; }
           #mfooter .footerContent .innerContent .footerBig dt {
             padding-bottom: 5px;
             color: #ffffffe3;
@@ -366,8 +366,15 @@
         #mfooter .footerContent .innerContent .grid + .grid {
           margin-top: 35px; }
         #mfooter .footerContent .innerContent .company {
-          padding: 3vw 5vw !important;
+          padding: 5vw 3.125vw !important;
           border-top: 0px solid #c8c8c8;
           font-size: 0.5vw; } }
+@media screen and (max-width: 640px) {
+  #mfooter .footerContent .innerContent .footerBig {
+    display: none; }
+  #mfooter .footerContent .innerContent .company {
+    padding: 10vw 3.125vw 3vw !important;
+    border-top: 0px solid #c8c8c8;
+    font-size: 0.5vw; } }
 
 /*# sourceMappingURL=layout.css.map */

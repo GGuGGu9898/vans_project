@@ -316,14 +316,14 @@
     line-height: 77px; }
   #cnt3 #faqAccodion .accoheader {
     font-size: 24px;
-    padding-left: 48px; }
+    padding-left: 4.2vw; }
   #cnt3 #faqAccodion .accopanel ul {
-    padding-left: 48px; }
+    padding-left: 4.2vw; }
     #cnt3 #faqAccodion .accopanel ul li {
       float: left;
       font-size: 20px; }
     #cnt3 #faqAccodion .accopanel ul li + li {
-      margin-left: 56px; }
+      margin-left: 3.5vw; }
     #cnt3 #faqAccodion .accopanel ul li:hover a, #cnt3 #faqAccodion .accopanel ul li a:focus {
       background: #000000;
       color: #ffffff; }

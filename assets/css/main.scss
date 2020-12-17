@@ -122,11 +122,11 @@
     #faqAccodion{
         .tit.on{background: $black;color: $white;}
         .accoheader, .accopanel{height: 77px;border: 1px solid $black;width: 100%;text-align: left;line-height: 77px;}
-        .accoheader{font-size: 24px;padding-left: 48px;}
+        .accoheader{font-size: 24px;padding-left: 4.2vw;}
         .accopanel{
-            ul{padding-left: 48px;
+            ul{padding-left: 4.2vw;
                 li{float: left;font-size: 20px;}
-                li+li{margin-left: 56px;}
+                li+li{margin-left: 3.5vw;}
                 li:hover a, li a:focus{background: $black; color: $white;}
             }
         }
