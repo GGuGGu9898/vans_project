@@ -196,7 +196,7 @@
             .footer_sns{
                 div{
                     @include bgsize(cover);
-                    display: inline-block;width: 3.22vw;height: 3.22vw;
+                    display: flex;width: 3.22vw;height: 3.22vw;
                     >img{
                     
                     width: 3.22vw;height: 3.22vw;}
